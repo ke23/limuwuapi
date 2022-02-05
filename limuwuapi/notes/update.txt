@@ -1,0 +1,29 @@
+Update soon -- >
+
+API :
+    1. Melakukan conditional formatting pada http response lalu increment tiap request hanya terjadi
+       Ketika user mendapat 200 saja
+    2. Update admin interface buat counter pakai modelAdmin
+    3. Membuat schema response berdasar status code, contoh -> https://stackoverflow.com/questions/68233438/multiple-queryset-to-another-model
+    4. Request limit restriction (resource limiting)
+    5. Rate limiting / throttling
+    6. User Request history
+    7. Filter last 7 day request
+    8. Documentation, example response
+    9. Benerin workflow validasi biar tidak memakan waktu dan lebih efisien
+    10. Cache query db yg model.objects.all() biar tidak boros
+    11. Cache return API yg direquest user
+
+DjangoCore:
+    1. Login - Logout - OAuth
+    2. Profile Page, Dashboard, Chart History
+    3. Signals, EmailVerification & Dashboard notification
+    4. Subscription feature, Payment integration,
+    5. Admin & Staff User for notification
+
+Testing:
+    1. Request secara bersama2 dengan bbrp user
+
+    
+Others:
+    1. Apakah harus menggunakan try except di bagian generators.py line 38 & 66 ? untuk validasi bentuk API key waktu di filter()

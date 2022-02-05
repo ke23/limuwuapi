@@ -1,0 +1,5 @@
+httpx
+httpx[http2]
+fake-useragent #edit bagian utls.py search text "w3"
+bs4
+lxml

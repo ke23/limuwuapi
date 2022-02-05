@@ -1,0 +1,9 @@
+sed 's/^/ --build-arg /g' .env.dev | xargs
+    Hasilnya : --build-arg SECRET_KEY=django-insecure-88csad2lq*fcisgx4j&wu*fkcu+12ue_jf*v7&0+0w9$xw)gof --build-arg DEBUG=True
+
+docker build $(sed 's/^/ --build-arg /g' .env.dev | xargs) -t <your_image_tag> .
+
+
+# MENGUBAH w3-table-all FAKE USER AGENT YG ERROR JADI ws-table-all
+     
+    sed -i -e 's/w3-table-all/ws-table-all/g' /usr/local/lib/python3.9/site-packages/fake_useragent/utils.py

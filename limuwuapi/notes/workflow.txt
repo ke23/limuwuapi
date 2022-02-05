@@ -1,0 +1,19 @@
+1. Membuat  Sebuah Web API yg memiliki bbrp endpoint yg mana tiap endpoint hanya bisa direquest menggunakan parameter apikey agar return response 200 Dan mendapat result
+
+2. Utk mendapat apikey, user harus register, verifikasi & login utk mendapat Free API key (unique)
+
+3. Setelah user login, user akan mendapatkan dashboard, profile page, Dan Free API key (unique)
+
+4. Setiap user pasti memiliki unique key (Free API key) Dan ketika user tsb melakukan request Di Salah satu endpoint Dan returnnya 200, maka total request user bertambah 1 Dan seterusnya
+
+5. Free apikey memiliki limit request harian yaitu 25request perhari, jika jumlah request harian melebihi tersebut maka akan return 429 too many request.
+Limit akan direset ke 0 setiap pukul 00:01AM
+
+6. Terdapat fitur pembelian PremiumAPIKey yg dapat dibeli oleh user Dan APIkey ini bersifat subscription Dan dapat kadaluarsa.
+Terdapat bbrp jenis plan yg dapat dibeli
+
+7. PremiumAPIKey memiliki unlimited request
+
+8. Setiap request yg masuk Di endpoint akan terdapat throttling yg akan mensuspend request jika terdapat unusual traffic, misalnya max 100 request dalam 1menit, jika lebih dari itu maka IP yg request akan di suspend sementara waktu
+
+9. Pada dashboard terdapat chart yg menampilkan total request yg telah dilakukan user dalam 7hari terakhir Dan history requestnya berdasarkan apikey yg dimiliki user
